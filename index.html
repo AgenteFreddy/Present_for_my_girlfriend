@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="hills"></div>
+    <div class="river"></div>
+    <div class="scene">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        
+        <!-- Pétalas de Cerejeira -->
+        <div class="petal" style="left:10%; animation-duration:8s; animation-delay:-2s"></div>
+        <div class="petal" style="left:30%; animation-duration:10s; animation-delay:-5s"></div>
+        <div class="petal" style="left:70%; animation-duration:9s; animation-delay:-1s"></div>
+        <div class="petal" style="left:90%; animation-duration:7s; animation-delay:-3s"></div>
+
+        <!-- Árvores -->
+        <div class="tree"><div class="leaves"></div></div>
+        <div class="tree"><div class="leaves"></div></div>
+        <div class="tree"><div class="leaves"></div></div>
+        <div class="tree"><div class="leaves"></div></div>
+        <div class="tree"><div class="leaves"></div></div>
+        <div class="tree"><div class="leaves"></div></div>
+        <div class="tree"><div class="leaves"></div></div>
+        <div class="tree"><div class="leaves"></div></div>
+    </div>
+    <div class="love-letter" onclick="this.classList.toggle('open')">
+        <div class="message-content">
+            Meu Amor,<br><br>
+            
+            Eu poderia tentar encontrar as palavras mais bonitas do mundo para descrever o que sinto por você, mas nenhuma delas seria suficiente. Você é o brilho nos meus dias, a calma nas minhas tempestades e a alegria que ilumina até os momentos mais simples.<br><br>
+            
+            Desde que te conheci, algo mudou. Seu sorriso é meu lugar seguro, seu olhar é a paz que sempre procurei. Você me inspira a ser melhor a cada dia.<br><br>
+            
+            Quero que saiba o quanto é especial. Cada detalhe seu, cada momento juntos são tesouros que guardo com carinho. Você é a prova viva do amor verdadeiro.<br><br>
+            
+            Prometo estar aqui sempre - nos dias bons e difíceis. Meu amor por você não conhece limites, só cresce e se fortalece.<br><br>
+            
+            Obrigada por existir, por iluminar minha vida. Eu te amo além das palavras.<br><br>
+            
+            <span class="signature">Com todo meu amor,<br>Amanda</span>
+        </div>
+    </div>
+
+    <!-- Botão de Coração Flutuante -->
+    <div class="heart-button" onclick="document.querySelector('.love-letter').classList.toggle('visible')">
+        ❤
+        <style>
+        .heart-button {
+            position: fixed;
+            bottom: 5vh;
+            right: 5vw;
+            font-size: 3vmin;
+            cursor: pointer;
+            animation: float 2s ease-in-out infinite;
+            color: #FF69B4;
+            text-shadow: 0 0 10px rgba(255,105,180,0.5);
+            z-index: 5;
+            transition: all 0.3s ease;
+        }
+
+        .heart-button:hover {
+            transform: scale(1.2);
+            filter: hue-rotate(20deg);
+        }
+    </style>
+</body>
+</html>
